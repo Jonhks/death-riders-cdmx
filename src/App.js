@@ -2,6 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
+  HashRouter,
   Route
 } from "react-router-dom";
 import { RUTAS } from './utils/constants';
@@ -13,7 +14,7 @@ const App = () => {
  
 
   return (
-    <Router>
+    <HashRouter basename='/'>
       <div>
         <Switch>
           <Route exact path={RUTAS.inicio}>
@@ -36,7 +37,7 @@ const App = () => {
           </Route>
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
