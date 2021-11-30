@@ -12,12 +12,55 @@ code {
     monospace;
 }
 
-.splash{
+.splash {
   width: 100%;
   height: 100vh;
   background-color: black;
-  background-image: url('./assets/logo.png');
-  background-size: 130%;
+  background-image: url('./assets/logo-min.png');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (max-width: 900px) {
+  .splash {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url('./assets/logo-min.png');
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.fondo {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-image: url('./assets/logo-min.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 900px) {
+  .splash {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url('./assets/logo-min.png');
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

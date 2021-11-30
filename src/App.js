@@ -8,17 +8,18 @@ import {
 import { RUTAS } from './utils/constants';
 
 import Splash from './components/Splash';
+import Login from './components/Login';
 
 const App = () => {
-
- 
-
   return (
     <HashRouter basename='/'>
       <div>
         <Switch>
           <Route exact path={RUTAS.inicio}>
             <Splash />
+          </Route>
+          <Route exact path={RUTAS.login}>
+            <Login />
           </Route>
           <Route exact path={RUTAS.perfil}>
             perfil
